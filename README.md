@@ -28,7 +28,7 @@ Example of brain images. First one is healthy, while there is a tumor in second 
   
    ![dwadaw](https://github.com/user-attachments/assets/359c6e09-caf2-4866-9720-ddc4b7be8163)
    
-  An early development site example, using early model trained on small dataset.
+ <sub>An early development site example, using early model trained on small dataset. </sub> 
 
 
 
