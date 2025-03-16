@@ -13,6 +13,7 @@ This project aims to develop a deep learning-based model for brain tumor classif
   
     ![Not Cancer  (1)](https://github.com/user-attachments/assets/729a9ceb-c967-4462-861f-40b79d1d5879)   ![Cancer (19)](https://github.com/user-attachments/assets/5afb40e2-0f52-4bb0-b59c-6bb6318aa102)
 
+Example of brain images. First one is healthy, while there is a tumor in second one
 
 
 2. **Model Training:**
