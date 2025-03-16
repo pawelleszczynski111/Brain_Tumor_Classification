@@ -37,7 +37,6 @@ Example of brain images. First one is healthy, while there is a tumor in second 
 - **Pretrained Models:** AlexNet, ResNet
 - **Web Framework:** Django
 - **Image Processing:**  PIL
-- **Database:** PostgreSQL (optional, for storing classification results)
 
 ## Features
 - **Automated Brain Tumor Detection** using state-of-the-art CNN models.
@@ -45,38 +44,6 @@ Example of brain images. First one is healthy, while there is a tumor in second 
 - **Transfer Learning** to improve classification accuracy.
 - **Secure and Scalable** backend using Django.
 
-## Installation & Usage
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/brain-tumor-classification.git
-   cd brain-tumor-classification
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-3. Train the model:
-   ```sh
-   python train.py
-   ```
-4. Start the Django application:
-   ```sh
-   python manage.py runserver
-   ```
-5. Access the web application at `http://127.0.0.1:8000/` and upload an image for classification.
-
-## Future Enhancements
-- Expand dataset to include MRI and CT scans.
-- Improve model accuracy with additional architectures (e.g., EfficientNet, Vision Transformers).
-- Implement explainability features (Grad-CAM visualization).
-- Deploy the application as a cloud-based service.
-
-## License
-This project is licensed under the MIT License.
-
-## Contribution
-Contributions are welcome! Open an issue or submit a pull request for improvements.
-
 ---
-Developed by **Your Name**
+Developed by **Paweł Leszczyński**
 
