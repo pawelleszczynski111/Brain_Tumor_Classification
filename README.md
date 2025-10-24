@@ -33,7 +33,7 @@ Example images from the dataset:
 
 | Tumor (Positive) | No Tumor (Negative) |
 |:----------------:|:-------------------:|
-| <img src="images/Cancer (1).jpg" width="220"/> | <img src="images/Not Cancer (1).jpeg" width="220"/> |
+| <img src="images/Cancer (1).jpg" width="220"/> | <img src="images/NotCancer(1).jpeg" width="220"/> |
 
 ---
 
