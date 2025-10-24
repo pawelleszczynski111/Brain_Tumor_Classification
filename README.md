@@ -37,7 +37,7 @@ Example images from the dataset:
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 The classification model is based on **ResNet-18**, a deep convolutional neural network that introduces *residual connections* to address the vanishing gradient problem.  
 This allows the model to train deeper networks efficiently while maintaining high performance.
@@ -63,4 +63,4 @@ Below are representative examples of model predictions:
 
 | True Positive | False Positive | True Negative | False Negative |
 |:--------------:|:--------------:|:--------------:|:--------------:|
-| <img src="TP_1.png" width="200"/> | <img src="FP_1.png" width="200"/> | <img src="TN_1.png" width="200"/> | <img src="FN_1.png" width="200"/> |
+| <img src="images/TP_1.png" width="200"/> | <img src="images/FP_1.png" width="200"/> | <img src="images/TN_1.png" width="200"/> | <img src="images/FN_1.png" width="200"/> |
