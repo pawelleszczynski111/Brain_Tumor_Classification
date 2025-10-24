@@ -1,49 +1,66 @@
-# Brain Tumor Classification
+# 🧠 Brain Tumor Classification from MRI Images using ResNet-18
 
-##Project still in development
+## 📄 Project Overview
 
-## Project Overview
-This project aims to develop a deep learning-based model for brain tumor classification using X-ray images. The model is built using PyTorch and trained on preprocessed medical images to distinguish between healthy brains and those with tumors. The final trained model will be integrated into a Django web application, allowing users to upload X-ray images and receive classification results in real-time.
+Magnetic Resonance Imaging (MRI) plays a crucial role in the diagnosis of brain tumors.  
+The goal of this project is to develop a **deep learning model based on the ResNet-18 convolutional neural network** capable of performing **binary classification** of MRI brain images — detecting whether a tumor is present (`tumor`) or not (`no tumor`).
 
-## Methodology
-
-1. **Data Processing:**
-   - X-ray images of the brain are collected and preprocessed (resizing, normalization, augmentation).
-   - The dataset is split into training nad validation data sets.
-  
-    ![Not Cancer  (1)](https://github.com/user-attachments/assets/729a9ceb-c967-4462-861f-40b79d1d5879)   ![Cancer (19)](https://github.com/user-attachments/assets/5afb40e2-0f52-4bb0-b59c-6bb6318aa102)
-
-Example of brain images. First one is healthy, while there is a tumor in second one
-
-
-2. **Model Training:**
-   - Initially, a Convolutional Neural Network (CNN) based on **AlexNet** is trained on the dataset.
-   - Transfer learning is applied to improve performance by fine-tuning a **pretrained ResNet model**.
-   - The model will be evaluated using accuracy, precision, recall, and F1-score.
-
-3. **Deployment:**
-   - The final trained model is integrated into a **Django** web application.
-   - Users can upload X-ray images through the web interface.
-   - The system processes the image and provides a classification result (healthy or tumor detected).
-  
-   ![dwadaw](https://github.com/user-attachments/assets/359c6e09-caf2-4866-9720-ddc4b7be8163)
-   
- <sub>An early development site example, using early model trained on small dataset. </sub> 
-
-
-
-## Technologies Used
-- **Deep Learning:** PyTorch
-- **Pretrained Models:** AlexNet, ResNet
-- **Web Framework:** Django
-- **Image Processing:**  PIL
-
-## Features
-- **Automated Brain Tumor Detection** using state-of-the-art CNN models.
-- **User-Friendly Web Interface** for uploading and analyzing X-ray images.
-- **Transfer Learning** to improve classification accuracy.
-- **Secure and Scalable** backend using Django.
+This project is part of a master’s thesis focused on the application of deep learning in medical image analysis.  
+The study investigates the impact of image preprocessing and augmentation on model performance and evaluates classification accuracy, sensitivity, and other relevant metrics.
 
 ---
-Developed by **Paweł Leszczyński**
 
+## 🧰 Technologies Used
+
+- **Python 3.10+**
+- **PyTorch** – implementation and training of the ResNet-18 model  
+- **Torchvision** – data loading and image augmentation  
+- **scikit-learn** – evaluation metrics (accuracy, precision, recall, F1-score)  
+- **Matplotlib** & **Seaborn** – visualization of results (confusion matrix, performance charts)  
+- **Jupyter Notebook** – interactive environment for experiments and analysis  
+
+---
+
+## 🧬 Dataset
+
+The dataset used in this project is the **[Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/preetviradiya/brian-tumor-dataset)** available on Kaggle.  
+It contains MRI brain images divided into two categories:
+
+- `yes` – MRI scans showing a brain tumor  
+- `no` – MRI scans without a tumor  
+
+Example images from the dataset:
+
+| Tumor (Positive) | No Tumor (Negative) |
+|:----------------:|:-------------------:|
+| <img src="TP_1.png" width="220"/> | <img src="TN_1.png" width="220"/> |
+
+---
+
+## 🧠 Model Architecture
+
+The classification model is based on **ResNet-18**, a deep convolutional neural network that introduces *residual connections* to address the vanishing gradient problem.  
+This allows the model to train deeper networks efficiently while maintaining high performance.
+
+**Adaptations for this project include:**
+- Modifying the first convolutional layer to accept grayscale MRI images  
+- Applying data augmentation (rotations, flips, brightness/contrast changes)  
+- Using **transfer learning** from a ResNet-18 pretrained on ImageNet  
+- Fine-tuning the model for binary classification (`tumor` / `no tumor`)  
+
+---
+
+## 📊 Evaluation and Results
+
+The model’s performance was evaluated using standard classification metrics:
+- **Accuracy**
+- **Precision**
+- **Recall (Sensitivity)**
+- **F1-score**
+
+A confusion matrix was also generated to visualize classification performance.  
+Below are representative examples of model predictions:
+
+| True Positive | False Positive | True Negative | False Negative |
+|:--------------:|:--------------:|:--------------:|:--------------:|
+| <img src="TP_1.png" width="200"/> | <img src="FP_1.png" width="200"/> | <img src="TN_1.png" width="200"/> | <img src="FN_1.png" width="200"/> |
